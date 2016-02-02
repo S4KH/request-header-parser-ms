@@ -22,7 +22,7 @@ app.get('/api/whoami', function(req, res){
     res.json(info)
 })
 
-var port = process.env.PORT || 8081;
+var port = process.env.PORT || 8082;
 app.listen(port,  function () {
 	console.log('Node.js listening on port ' + port + '...');
 });
