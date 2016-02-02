@@ -4,6 +4,10 @@ var express = require('express')
 var app = express()
 
 app.get('/', function(req, res){
+    res.send('Go to /api/whoami for functionality')
+})
+
+app.get('/api/whoami', function(req, res){
     //console.log(req.headers)
     var ua = req.headers['user-agent'].split(/\s*[;)(]\s*/);
     var al = req.headers['accept-language'].split(/\s*[,)(]\s*/);
